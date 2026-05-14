@@ -125,13 +125,12 @@ with st.sidebar:
 
     st.markdown("---")
 
-    st.subheader("Disusun Oleh")
+    st.subheader("Dibuat Oleh")
     st.write("Nama : Rafli Haikal")
     st.write("NPM : 237006099")
 
     st.markdown("---")
 
-    st.subheader("Universitas")
     st.write("Program Studi Informatika")
     st.write("Fakultas Teknik")
     st.write("Universitas Siliwangi")
