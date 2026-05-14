@@ -26,8 +26,8 @@ h1 a, h2 a, h3 a {
 .main-box {
     padding: 35px;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
     box-shadow: 0 8px 32px rgba(0,0,0,0.35);
     animation: fadeIn 1s ease-in-out;
 }
@@ -35,14 +35,14 @@ h1 a, h2 a, h3 a {
 .card {
     padding: 25px;
     border-radius: 18px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
     margin-bottom: 20px;
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
@@ -52,15 +52,16 @@ h1 a, h2 a, h3 a {
     background: linear-gradient(135deg, #2563eb, #7c3aed);
     text-align: center;
     color: white;
-    font-size: 30px;
+    font-size: 32px;
     font-weight: bold;
-    animation: fadeInUp 0.8s ease-in-out;
     margin-top: 20px;
+    animation: fadeInUp 0.8s ease-in-out;
 }
 
 .small-text {
     color: #cbd5e1;
     font-size: 15px;
+    line-height: 1.8;
 }
 
 .footer {
@@ -70,7 +71,7 @@ h1 a, h2 a, h3 a {
     padding-top: 30px;
 }
 
-.stButton>button {
+.stButton > button {
     width: 100%;
     height: 55px;
     border-radius: 14px;
@@ -82,7 +83,7 @@ h1 a, h2 a, h3 a {
     transition: 0.3s;
 }
 
-.stButton>button:hover {
+.stButton > button:hover {
     transform: scale(1.02);
     background: linear-gradient(135deg, #1d4ed8, #6d28d9);
 }
@@ -113,13 +114,14 @@ h1 a, h2 a, h3 a {
 """, unsafe_allow_html=True)
 
 with st.sidebar:
+
     st.title("🚗 Prediksi Harga Mobil")
 
     st.markdown("---")
 
     st.subheader("Final Project")
-    st.write("Mata Kuliah: Sains Data")
-    st.write("Metode: Linear Regression")
+    st.write("Mata Kuliah : Sains Data")
+    st.write("Metode : Linear Regression")
 
     st.markdown("---")
 
@@ -129,20 +131,24 @@ with st.sidebar:
 
     st.markdown("---")
 
-    st.caption("Universitas")
-    st.write("Universitas Muhammadiyah Tangerang")
+    st.subheader("Universitas")
+    st.write("Program Studi Informatika")
+    st.write("Fakultas Teknik")
+    st.write("Universitas Siliwangi")
 
 st.markdown("""
 <div class="main-box">
-    <h1>🚗 Prediksi Harga Mobil</h1>
 
-    <h3>Final Project Sains Data</h3>
+<h1>🚗 Prediksi Harga Mobil</h1>
 
-    <p class="small-text">
-        Aplikasi ini dibuat untuk memenuhi tugas UAS Mata Kuliah Sains Data.
-        Sistem menggunakan metode Linear Regression untuk memprediksi harga mobil
-        berdasarkan spesifikasi yang dimasukkan pengguna.
-    </p>
+<h3>Final Project Sains Data</h3>
+
+<p class="small-text">
+Aplikasi ini dibuat untuk memenuhi tugas UAS Mata Kuliah Sains Data.
+Sistem menggunakan metode Linear Regression untuk memprediksi harga mobil
+berdasarkan spesifikasi yang dimasukkan pengguna.
+</p>
+
 </div>
 """, unsafe_allow_html=True)
 
@@ -250,17 +256,19 @@ st.write("")
 
 st.markdown("""
 <div class="card">
-    <h4>Catatan</h4>
 
-    <p class="small-text">
-        Hasil prediksi ini merupakan estimasi berdasarkan model Linear Regression
-        dan data penjualan mobil yang digunakan pada project.
-    </p>
+<h4>Catatan</h4>
+
+<p class="small-text">
+Hasil prediksi ini merupakan estimasi berdasarkan model Linear Regression
+dan data penjualan mobil yang digunakan pada project.
+</p>
+
 </div>
 """, unsafe_allow_html=True)
 
 st.markdown("""
 <div class="footer">
-    Final Project Sains Data | Rafli Haikal - 237006099
+Final Project Sains Data | Rafli Haikal - 237006099
 </div>
 """, unsafe_allow_html=True)
