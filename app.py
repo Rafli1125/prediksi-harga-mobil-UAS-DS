@@ -18,6 +18,10 @@ h1 a, h2 a, h3 a {
     display: none !important;
 }
 
+.block-container {
+    padding-top: 2rem !important;
+}
+
 .stApp {
     background: linear-gradient(135deg, #0f172a, #111827);
     color: white;
@@ -114,7 +118,6 @@ h1 a, h2 a, h3 a {
 """, unsafe_allow_html=True)
 
 with st.sidebar:
-
     st.title("🚗 Prediksi Harga Mobil")
 
     st.markdown("---")
@@ -128,9 +131,6 @@ with st.sidebar:
     st.subheader("Dibuat Oleh")
     st.write("Nama : Rafli Haikal")
     st.write("NPM : 237006099")
-
-    st.markdown("---")
-
     st.write("Program Studi Informatika")
     st.write("Fakultas Teknik")
     st.write("Universitas Siliwangi")
@@ -156,7 +156,6 @@ st.write("")
 col1, col2 = st.columns(2)
 
 with col1:
-
     st.markdown('<div class="card">', unsafe_allow_html=True)
 
     st.subheader("Spesifikasi Mesin")
@@ -192,7 +191,6 @@ with col1:
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col2:
-
     st.markdown('<div class="card">', unsafe_allow_html=True)
 
     st.subheader("Spesifikasi Body")
